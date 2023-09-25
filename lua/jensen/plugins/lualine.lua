@@ -4,12 +4,6 @@ return {
         "nvim-tree/nvim-web-devicons"
     },
     config = function()
-        require("lualine").setup({
-            options = {
-                -- ... your lualine config
-                theme = 'tokyonight'
-                -- ... your lualine config
-            }
-        })
+        require("lualine").setup({})
     end,
 }

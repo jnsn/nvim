@@ -12,15 +12,8 @@ echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.co
 ```
 
 ```
+sudo apt-get update
 sudo apt-get -y install curl fzf ripgrep tree git xclip python3 python3-pip nodejs npm tzdata ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config zip unzip
+
 sudo npm install -g neovim
-```
-
-```
-npm install dockerfile-language-server-nodejs
-npm install @microsoft/compose-language-service
-npm install bash-language-server
-npm install azure-pipelines-language-server
-
-yarn add yaml-language-server
 ```
