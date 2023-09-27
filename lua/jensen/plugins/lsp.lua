@@ -9,7 +9,8 @@ return {
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
         "jose-elias-alvarez/null-ls.nvim",
-        "MunifTanjim/prettier.nvim"
+        "MunifTanjim/prettier.nvim",
+        "jayp0521/mason-null-ls.nvim"
     },
     config = function()
         local lsp_zero = require('lsp-zero')
@@ -23,14 +24,20 @@ return {
 
         require('mason').setup({})
         require('mason-lspconfig').setup({
-            ensure_installed = { "bashls", "yamlls", "docker_compose_language_service", "dockerls", "prettierd" },
+            ensure_installed = { "bashls", "yamlls", "docker_compose_language_service", "dockerls" },
             handlers = {
                 lsp_zero.default_setup,
                 require("lspconfig").bashls.setup({}),
                 require("lspconfig").yamlls.setup({}),
                 require("lspconfig").docker_compose_language_service.setup({}),
                 require("lspconfig").dockerls.setup({}),
-            }
+            },
+            automatic_installation = true,
+        })
+
+        require("mason-null-ls").setup({
+            ensure_installed = { "prettierd" },
+            automatic_installation = true,
         })
 
         local null_ls = require("null-ls")
