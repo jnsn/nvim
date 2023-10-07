@@ -1,4 +1,4 @@
 return {
-    "habamax/vim-rst",
-    "Stormherz/tablify",
+	"habamax/vim-rst",
+	"Stormherz/tablify",
 }
