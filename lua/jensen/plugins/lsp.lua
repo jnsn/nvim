@@ -21,13 +21,14 @@ return {
 
     require("mason").setup({})
     require("mason-lspconfig").setup({
-      ensure_installed = { "bashls", "yamlls", "docker_compose_language_service", "dockerls" },
+      ensure_installed = { "bashls", "yamlls", "docker_compose_language_service", "dockerls", "powershell_es" },
       handlers = {
         lsp_zero.default_setup,
         require("lspconfig").bashls.setup({}),
         require("lspconfig").yamlls.setup({}),
         require("lspconfig").docker_compose_language_service.setup({}),
         require("lspconfig").dockerls.setup({}),
+        require("lspconfig").powershell_es.setup({}),
       },
       automatic_installation = true,
     })
