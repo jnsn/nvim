@@ -29,3 +29,5 @@ vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current spli
 -- buffers
 vim.keymap.set("n", "[b", ":bnext<CR>")
 vim.keymap.set("n", "b]", ":bprev<CR>")
+
+vim.keymap.set("n", "<leader>rw", [[:%s/\s\+$//e<CR>]], { desc = "Remove extra whitespace." })
