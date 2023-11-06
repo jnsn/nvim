@@ -39,6 +39,22 @@ return {
         "stylua", -- lua formatter
       },
     })
+
+    local cmp = require("cmp")
+    local cmp_action = lsp_zero.cmp_action()
+
+    cmp.setup({
+      mapping = cmp.mapping.preset.insert({
+        -- 'TAB' key to confirm selection
+        ["<TAB>"] = cmp.mapping.confirm({ select = false }),
+        -- 'CTRL+SPACE' to trigger completion menu
+        ["<C-Space>"] = cmp.mapping.complete(),
+        -- Navigate between snippet placeholder
+        ["<C-f>"] = cmp_action.luasnip_jump_forward(),
+        ["<C-b>"] = cmp_action.luasnip_jump_backward(),
+        -- toggle completion
+        ["<M-u>"] = cmp_action.toggle_completion(),
+      }),
+    })
   end,
 }
-
