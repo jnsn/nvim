@@ -35,7 +35,9 @@ return {
         require("lspconfig").yamlls.setup({}),
         require("lspconfig").docker_compose_language_service.setup({}),
         require("lspconfig").dockerls.setup({}),
-        require("lspconfig").powershell_es.setup({}),
+        require("lspconfig").powershell_es.setup({
+          bundle_path = vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services/",
+        }),
         require("lspconfig").lua_ls.setup({}),
       },
       automatic_installation = true,
