@@ -1,6 +1,9 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
+  dependencies = {
+    "JoosepAlviste/nvim-ts-context-commentstring",
+  },
   config = function()
     require("nvim-treesitter.install").compilers = { "clang", "gcc" }
     require("nvim-treesitter.configs").setup({
@@ -24,11 +27,6 @@ return {
         "markdown_inline",
       },
 
-      context_commentstring = {
-        enable = true,
-        enable_autocmd = false,
-      },
-
       -- Install parsers synchronously (only applied to `ensure_installed`)
       sync_install = false,
 
@@ -46,6 +44,9 @@ return {
         additional_vim_regex_highlighting = false,
       },
     })
+    require("ts_context_commentstring").setup({
+      enable = true,
+      enable_autocmd = false,
+    })
   end,
 }
-

@@ -48,3 +48,4 @@ vim.opt.clipboard = "unnamedplus"
 -- backspace
 vim.opt.backspace = "indent,eol,start" -- allow backspace on indent, end of line or insert mode start position
 
+vim.g.skip_ts_context_commentstring_module = true
