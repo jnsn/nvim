@@ -28,6 +28,7 @@ return {
         "dockerls",
         "powershell_es",
         "lua_ls",
+        "esbonio",
       },
       handlers = {
         lsp_zero.default_setup,
@@ -39,6 +40,7 @@ return {
           bundle_path = vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services/",
         }),
         require("lspconfig").lua_ls.setup({}),
+        require("lspconfig").esbonio.setup({}),
       },
       automatic_installation = true,
     })
