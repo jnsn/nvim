@@ -29,6 +29,8 @@ return {
         "powershell_es",
         "lua_ls",
         "esbonio",
+        "omnisharp",
+        "html",
       },
       handlers = {
         lsp_zero.default_setup,
@@ -41,6 +43,11 @@ return {
         }),
         require("lspconfig").lua_ls.setup({}),
         require("lspconfig").esbonio.setup({}),
+        require("lspconfig").omnisharp.setup({
+            cmd = { "dotnet", vim.fn.stdpath("data") .. "/mason/packages/omnisharp/libexec/OmniSharp.dll" },
+            enable_import_completion = true,
+        }),
+        require("lspconfig").html.setup({}),
       },
       automatic_installation = true,
     })
