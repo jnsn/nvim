@@ -19,6 +19,7 @@ return {
         markdown = { "prettierd" },
         graphql = { "prettierd" },
         lua = { "stylua" },
+        sh = { "shfmt" },
       },
     })
 

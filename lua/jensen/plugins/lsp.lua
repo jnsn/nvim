@@ -56,6 +56,7 @@ return {
       ensure_installed = {
         "prettierd", -- prettier formatter
         "stylua", -- lua formatter
+        "shfmt", -- Shell scripting formatter
       },
     })
 
