@@ -30,3 +30,14 @@ vim.keymap.set("n", "b]", ":bprev<CR>")
 
 vim.keymap.set("n", "<leader>rw", [[:%s/\s\+$//e<CR>]], { desc = "Remove extra whitespace." })
 
+vim.keymap.set("x", "<leader>p", '"_dP')
+
+vim.keymap.set("x", "<<", function()
+  vim.cmd("normal! <<")
+  vim.cmd("normal! gv")
+end)
+
+vim.keymap.set("x", ">>", function()
+  vim.cmd("normal! >>")
+  vim.cmd("normal! gv")
+end)
