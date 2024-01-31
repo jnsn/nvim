@@ -9,6 +9,11 @@ return {
 
     local api = require("nvim-tree.api")
 
+    local function open_nvim_tree()
+      -- open the tree
+      require("nvim-tree.api").tree.open()
+    end
+
     require("nvim-tree").setup({
       sort_by = "case_sensitive",
       view = {
@@ -60,5 +65,7 @@ return {
     ) -- toggle file explorer on current file
     vim.keymap.set("n", "<leader>ec", "<cmd>NvimTreeCollapse<CR>", { desc = "Collapse file explorer" }) -- collapse file explorer
     vim.keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", { desc = "Refresh file explorer" }) -- refresh file explorer
+
+    -- vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
   end,
 }
