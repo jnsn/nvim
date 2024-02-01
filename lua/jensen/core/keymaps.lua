@@ -32,12 +32,16 @@ vim.keymap.set("n", "<leader>rw", [[:%s/\s\+$//e<CR>]], { desc = "Remove extra w
 
 vim.keymap.set("x", "<leader>p", '"_dP')
 
-vim.keymap.set("x", "<<", function()
-  vim.cmd("normal! <<")
-  vim.cmd("normal! gv")
-end)
+-- Stay in indent mode
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
 
-vim.keymap.set("x", ">>", function()
-  vim.cmd("normal! >>")
-  vim.cmd("normal! gv")
-end)
+-- vim.keymap.set("x", "<<", function()
+--   vim.cmd("normal! <<")
+--   vim.cmd("normal! gv")
+-- end)
+--
+-- vim.keymap.set("x", ">>", function()
+--   vim.cmd("normal! >>")
+--   vim.cmd("normal! gv")
+-- end)
