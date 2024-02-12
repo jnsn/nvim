@@ -1,3 +1,1 @@
-require("jensen.core")
-require("jensen.lazy")
-
+require("config.lazy")
