@@ -45,11 +45,14 @@
   "omnisharp-extended-lsp.nvim": { "branch": "main", "commit": "4be2e8689067494ed7e5a4f1221adc31d1a07783" },
   "persistence.nvim": { "branch": "main", "commit": "4982499c1636eac254b72923ab826ee7827b3084" },
   "plenary.nvim": { "branch": "master", "commit": "4f71c0c4a196ceb656c824a70792f3df3ce6bb6d" },
+  "tablify": { "branch": "master", "commit": "abddcf9eb56e4b120718f2a88d80cf2f2d910d4e" },
   "telescope.nvim": { "branch": "master", "commit": "0f865f17af4f9bc1587a0132414cdfd32d91852e" },
   "todo-comments.nvim": { "branch": "main", "commit": "833d8dd8b07eeda37a09e99460f72a02616935cb" },
   "tokyonight.nvim": { "branch": "main", "commit": "610179f7f12db3d08540b6cc61434db2eaecbcff" },
   "trouble.nvim": { "branch": "main", "commit": "f1168feada93c0154ede4d1fe9183bf69bac54ea" },
+  "undotree": { "branch": "master", "commit": "9dbbf3b7d19dda0d22ceca461818e4739ad8154d" },
   "vim-illuminate": { "branch": "master", "commit": "305bf07b919ac526deb5193280379e2f8b599926" },
+  "vim-rst": { "branch": "master", "commit": "1dfd222db5ce5bb737a6b0694794667efdad3342" },
   "vim-startuptime": { "branch": "master", "commit": "ab5acd23f39347bab04904df2177e114bffb97a8" },
   "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }
