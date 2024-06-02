@@ -16,6 +16,7 @@ return {
         graphql = { "prettierd" },
         lua = { "stylua" },
         sh = { "shfmt" },
+        python = { "black" },
       },
     },
   },
