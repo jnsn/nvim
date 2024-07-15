@@ -16,8 +16,10 @@ return {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "prettierd",
-        "black",
+        "xmlformatter",
+        "powershell-editor-services",
+        "bash-language-server",
+        "esbonio",
       },
     },
   },
