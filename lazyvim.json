@@ -17,8 +17,9 @@
     "lazyvim.plugins.extras.ui.treesitter-context",
     "lazyvim.plugins.extras.util.dot"
   ],
+  "install_version": 7,
   "news": {
     "NEWS.md": "11229"
   },
-  "version": 7
+  "version": 8
 }
